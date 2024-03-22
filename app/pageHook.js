@@ -19,6 +19,7 @@ import {
 
 import Snowfall from "react-snowfall";
 
+
 const people = [
   {
     id: 1,
@@ -108,7 +109,7 @@ function PageHook() {
   return (
     <div className="h-full w-full p-3 flex items-center justify-center relative z-50">
       <Snowfall
-        snowflakeCount={200}
+        snowflakeCount={1000}
         color="grey"
         style={{
           position: "fixed",
@@ -116,7 +117,7 @@ function PageHook() {
           height: "100vh",
           zIndex: -9,
         }}
-        speed={"200"}
+        speed={"400"}
         radius={"12"}
       />
       <section className=" mt-5  ">
@@ -162,12 +163,12 @@ function PageHook() {
               BlockPen
             </h1>
             <p className="max-w-[600px]  leading-7 text-center text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
-            Embark on a Journey of Learning with Our Revolutionary Blockchain-Powered Application! BlockPen
+            {`Embark on a Journey of Learning with Our Revolutionary Blockchain-Powered Application! BlockPen
             Be the First to Know When We Launch! 
-            Sign up for Our Waitlist Today and Experience the Future of Block Chain!"
+            Sign up for Our Waitlist Today and Experience the Future of Block Chain!"`}
             </p>
             {errors.email && (
-              <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
+              <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md  dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
                 <PiWarningThin className="text-[#704705] dark:text-white text-lg" />
                 {errors.email.message}
               </p>
@@ -225,11 +226,11 @@ function PageHook() {
                 className="flex items-center justify-center gap-x-3 bg-gradient-to-tr from-black from-50% via-black/40 to-gray-600/40 via-45% border-t-gray-700  disabled:cursor-not-allowed lg:w-36 shadow-md  border border-b-0 border-r-0 border-l-0 bg-black  mt-4 lg:mt-0 rounded-md px-2 py-2.5 w-full  font-InterMedium text-sm text-gray-200 dark:text-gray-500 "
                 type="submit"
               >
-                <TbArrowsJoin2 className="text-[#383127]" />
+                <TbArrowsJoin2 className="text-[#ffffff]" />
                 {isSubmitting ? (
                   "loading "
                 ) : (
-                  <span className="shrink-0">Join Waitlist</span>
+                  <span className="shrink-0 text-[#ffffff]">Join Waitlist</span>
                 )}
               </button>
 
@@ -271,7 +272,7 @@ function PageHook() {
                           {testimonial.designation}
                         </div>
                       </motion.div>
-                    )}
+                    )};
                   </AnimatePresence>
 
                   <div>
@@ -350,11 +351,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
 
             <div className="relative z-10">
               <p className="lg:text-justify  leading-6 mb-6">
-                I'm doing a little Giveaway on the Launch of this Template
-                Website by December. So If you sign up today, which will only
-                take a few seconds and 1 click, you'll automatically be
-                participated in our giveaway and 10 lucky people will get free
-                access to one of Our Premium Templates, free of cost!
+                  {`Join BlockP`}
               </p>
               <div className="flex gap-2">
                 <button
@@ -410,13 +407,13 @@ const RecievedModal = ({ isOpenModel, setIsOpenModel }) => {
               alt=""
             />
             <h1 className="text-3xl font-InterBold text-center">
-              You're on the waitlist
+              {`You're on the waitlist`}
             </h1>
 
             <div className="relative z-10">
               <p className=" text-center text-lg mt-4  mb-6">
-                We'll send a notification as soon as v0 is ready for you to
-                experience
+                {`We'll send a notification as soon as v0 is ready for you to
+                experience`}
               </p>
               <div className="flex gap-2">
                 <button

@@ -85,20 +85,7 @@ let Icons = [
 ];
 
 const people = [
-  {
-    id: 1,
-    name: "INSTAGRAM",
-    designation: "Block Pen",
-    image: "/img/time.png",
-    href: "https://instagram.com",
-  },
-  {
-    id: 2,
-    name: "TWITTER",
-    designation: "Block Pen",
-    image: "/img/alarm.png",
-    href: "https://twitter.com",
-  },
+  
   {
     id: 3,
     name: "GITHUB",
